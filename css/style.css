@@ -1,5 +1,4 @@
-ul,
-ol {
+ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
@@ -16,6 +15,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -32,6 +33,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: #fff;
   color: #2e2f42;
+  font-style: normal;
 }
 
 .container {
@@ -49,10 +51,15 @@ body {
 
 /* Header */
 
-.page-header {
+.page-header .container {
+  display: flex;
+  padding: 24px 0;
 }
 
 .page-nav {
+  display: flex;
+  text-align: center;
+  margin-right: auto;
 }
 
 .logo-link {
@@ -66,9 +73,12 @@ body {
 
 .logos-link {
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 .menu {
+  display: flex;
+  gap: 40px;
 }
 
 .menu-item {
@@ -86,6 +96,7 @@ body {
 .menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
+  text-decoration: underline;
 }
 
 /* .menu-link:active {
@@ -96,6 +107,8 @@ body {
 }
 
 .adress-list {
+  display: flex;
+  gap: 40px;
 }
 
 .adress-item {
@@ -136,7 +149,9 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
 }
+
 .hero-btn {
   font-weight: 500;
   font-size: 16px;
@@ -172,6 +187,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .benefits-text {
   font-size: 16px;
@@ -207,6 +223,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .team-text {
   font-size: 16px;
@@ -241,6 +258,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   font-size: 16px;
@@ -261,7 +279,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
+
 .footer-logos-link {
   color: #f4f4fd;
 }
